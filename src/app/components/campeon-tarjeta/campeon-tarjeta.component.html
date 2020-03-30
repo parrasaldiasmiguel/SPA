@@ -1,0 +1,14 @@
+<div class="card animated fadeIn fast">
+    <img [src]="campeon.img" class="card-img-top" [alt]="campeon.nombre">
+    <div class="card-body">
+        <h5 class="card-title">{{campeon.nombre}}</h5>
+        <p class="card-text">{{campeon.frase}}</p>
+        <p class="card-text">{{campeon.tipo}}</p>
+        <p class="card-text"><small class="text-muted">{{campeon.lanzamiento}}</small></p>
+        <!--<a [routerLink]="['/animal', i]" class="btn btn-outline-primary">Ver más link...</a>-->
+        <button (click)="verCampeon()" class="btn btn-outline-primary btn-block">
+                    Ver más...
+              </button>
+
+    </div>
+</div>

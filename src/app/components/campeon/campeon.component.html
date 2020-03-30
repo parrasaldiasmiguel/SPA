@@ -1,0 +1,25 @@
+<h1 class="animated fadeIn">{{campeon.nombre | uppercase}} <small>({{campeon.lanzamiento | date:'y'}})</small></h1>
+<h4 class="animated fadeIn">{{campeon.frase | uppercase}} </h4>
+<hr>
+<div class="row animated fadeIn fast">
+
+    <div class="col-md-4">
+        <img [src]="campeon.img" class="img-fluid" alt="animal.nombre">
+        <br>
+        <!-- <img *ngIf="campeon.tipo == 'Asesino'" class="img-logo" src="assets/img/asesino.jpg" alt="Asesino">
+            <img *ngIf="animal.habitat != 'Terrestre'" class="img-logo" src="assets/img/agua.jpg" alt="Acuático">-->
+        <br>
+        <a [routerLink]="['/universo']" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+
+    <div class="col-md-8">
+        <h3>{{campeon.nombre}}</h3>
+        <hr>
+        <p>
+            {{campeon.bio}}
+        </p>
+        <div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<h1 class="text-center"> Universo</h1>
+<hr>
+<div class="card-columns">
+    <app-campeon-tarjeta (campeonSeleccionado)="verCampeon($event)" [campeon]="camp" [indice]="i" *ngFor="let camp of campeones; let i=index"></app-campeon-tarjeta>
+</div>

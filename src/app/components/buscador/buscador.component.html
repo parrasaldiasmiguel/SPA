@@ -1,0 +1,14 @@
+<h1>Buscando: <small>{{termino}}</small></h1>
+<hr>
+<div class="row animated fadeIn fast" *ngIf="campeones.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen resultados con el término: {{ termino }}
+        </div>
+    </div>
+</div>
+<div class="card-columns">
+
+    <app-campeon-tarjeta [campeon]="camp" [indice]="camp.idx" *ngFor="let camp of campeones"></app-campeon-tarjeta>
+
+</div>
